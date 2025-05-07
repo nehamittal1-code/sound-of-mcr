@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sound of MCR</title>
+  <!-- Bootstrap CSS (v5.3) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Garet&family=Telegraf&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <!-- Header with Bootstrap Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Sound of MCR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="spotlight.html">Artist Spotlight</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section using Concert Background -->
+  <section class="hero" style="position: relative; background: url('images/concert-hero.jpg') center center / cover no-repeat; min-height: 70vh; color: #fff;">
+    <!-- Dark overlay for text contrast -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4);"></div>
+    <div class="hero-content container text-center" style="position: relative; z-index: 1; padding: 2rem;">
+      <h2 style="font-family: 'Telegraf', sans-serif;">DISCOVER MANCHESTER'S</h2>
+      <h1 style="font-family: 'Garet', sans-serif; margin: 1rem 0;">STUDENT MUSIC SCENE</h1>
+      <button class="btn btn-lg" style="background-color: var(--primary-pink); color: var(--white); border: none; border-radius: 8px;">EXPLORE</button>
+    </div>
+  </section>
+
+  <!-- Features Section using Bootstrap Grid -->
+  <section class="features py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- ARTIST OF THE MONTH -->
+        <div class="col-md-4">
+          <div class="feature-box text-center p-3 bg-light">
+            <img src="images/artist-of-the-month.jpg" alt="Artist of the Month" class="img-fluid" />
+            <h3 class="mt-2" style="font-family: 'Garet', sans-serif;">ARTIST OF THE MONTH</h3>
+          </div>
+        </div>
+        <!-- LATEST REVIEW replaced with 5 Stars -->
+        <div class="col-md-4">
+          <div class="feature-box text-center p-3 bg-light">
+            <div class="review-stars" style="padding-top: 2rem;">
+              <span style="font-size: 2rem; color: var(--primary-yellow);">&#9733;</span>
+              <span style="font-size: 2rem; color: var(--primary-yellow);">&#9733;</span>
+              <span style="font-size: 2rem; color: var(--primary-yellow);">&#9733;</span>
+              <span style="font-size: 2rem; color: var(--primary-yellow);">&#9733;</span>
+              <span style="font-size: 2rem; color: var(--primary-yellow);">&#9733;</span>
+            </div>
+          </div>
+        </div>
+        <!-- UPCOMING EVENT -->
+        <div class="col-md-4">
+          <div class="feature-box text-center p-3 bg-light">
+            <img src="images/upcoming-event.jpg" alt="Upcoming Event" class="img-fluid" />
+            <h3 class="mt-2" style="font-family: 'Garet', sans-serif;">UPCOMING EVENT</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="quote-section">
+    <div class="quote-box">
+      "MANCHESTER'S MUSIC BY STUDENTS, FOR STUDENTS"
+    </div>
+  </section>
+  
+<!-- Blog Section -->
+<section class="blog-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" style="font-family: var(--font-primary); font-size: 2.5rem;">
+      Dance / Electronic / EDM Blogs
+    </h2>
+    <div class="row g-4">
+      <!-- Mixmag Blog -->
+      <div class="col-md-6">
+        <div class="d-flex flex-column flex-md-row align-items-center bg-light p-3 rounded shadow">
+          <!-- Mixmag logo -->
+          <div class="me-md-3 mb-3 mb-md-0" style="width: 120px; height: 120px;">
+            <img src="images/mixmag.jpg" alt="Mixmag Logo" style="width: 100%; height: 100%; object-fit: contain;" />
+          </div>
+          <div>
+            <h5 style="font-family: var(--font-primary);">Mixmag</h5>
+            <p style="font-family: var(--font-secondary);">
+              A heavyweight when it comes to dance music and clubbing news. Mixmag offers new music reviews, live DJ sets and industry news are just some of the areas covered on the blog.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resident Advisor Blog -->
+      <div class="col-md-6">
+        <div class="d-flex flex-column flex-md-row align-items-center bg-light p-3 rounded shadow">
+          <!-- Resident Advisor logo -->
+          <div class="me-md-3 mb-3 mb-md-0" style="width: 120px; height: 120px;">
+            <img src="images/resident.jpg" alt="Resident Advisor Logo" style="width: 100%; height: 100%; object-fit: contain;" />
+          </div>
+          <div>
+            <h5 style="font-family: var(--font-primary);">Resident Advisor</h5>
+            <p style="font-family: var(--font-secondary);">
+              Resident Advisor is an online magazine for electronic music lovers. Discover your next favourite dance artist or event. The site has new news, reviews and features published every weekday.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

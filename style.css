@@ -1,0 +1,432 @@
+:root {
+  --primary-pink: #FF01FB;
+  --primary-blue: #02A9EA;
+  --primary-yellow: #FAFF00;
+  --white: #FFFFFF;
+
+  --font-primary: 'Garet', sans-serif;
+  --font-secondary: 'Telegraf', sans-serif;
+}
+
+/* Reset & global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global background for all whitespace */
+body {
+  background-color: black;
+  font-family: var(--font-secondary);
+  color: #fff;
+}
+
+/* Apply Garet to headings and site branding */
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.section-title {
+  font-family: var(--font-primary);
+}
+
+/* Navbar brand (Sound of MCR) */
+.navbar-brand {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary-pink) !important;
+}
+
+/* Hero section */
+.hero {
+  width: 100%;
+  min-height: 70vh;
+  background: url('images/concert-hero.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  color: #fff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.explore-button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: var(--primary-pink);
+  border: none;
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.feature-box {
+  width: 300px;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: #000;
+}
+
+.feature-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.feature-box h3 {
+  margin-top: 0.5rem;
+  color: #000;
+}
+
+/* Review Stars */
+.review-stars {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.review-stars span {
+  font-size: 2rem;
+  color: var(--primary-yellow);
+}
+
+/* Quote Section */
+.quote-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.quote-box {
+  background: black;
+  color: var(--primary-blue);
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: var(--font-secondary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Blog Section */
+.blog-section {
+  padding: 2rem 0;
+}
+
+/* Blog title in yellow, slightly smaller */
+.blog-section h2 {
+  color: var(--primary-yellow) !important;
+  font-size: 1.8rem !important;
+  font-family: var(--font-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Mixmag & Resident Advisor boxes clickable */
+.blog-section .d-flex {
+  background: var(--primary-yellow) !important;
+  color: #000;
+  cursor: pointer;
+}
+
+.blog-section .d-flex h5,
+.blog-section .d-flex p {
+  color: #000;
+}
+
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: var(--primary-blue);
+  color: var(--white);
+}
+
+/* About Page Section */
+.about-section {
+  background: black;
+  color: var(--primary-yellow);
+}
+
+/* Utility Classes */
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Telegraf', sans-serif;
+}
+.navbar-brand {
+  font-family: 'Garet', sans-serif;
+  font-size: 2rem;
+  color: #FF01FB !important;
+}
+.section-title {
+  font-family: 'Garet', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.card.bg-blue {
+  background-color: #02A9EA;
+  color: white;
+}
+.card.bg-pink {
+  background-color: #FF01FB;
+  color: white;
+}
+.calendar-table {
+  background-color: #FAFF00;
+  color: black;
+}
+.calendar-table td, .calendar-table th {
+  height: 100px;
+  vertical-align: middle;
+}
+.calendar-table .whp {
+  font-weight: bold;
+  background-color: #FFD700;
+}
+
+.calendar-table .baker {
+  font-weight: bold;
+  background-color: #FCE83A;
+}
+.event-form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.form-section {
+  flex: 1;
+}
+.image-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.image-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.recent-label {
+  color: #FF01FB;
+  font-family: 'Garet', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-yellow {
+  color: #FAFF00; 
+  font-family: 'Garet', sans-serif;
+  font-size: 1.5rem;
+}
+
+.calendar-table thead th {
+  background-color: #FAFF00; 
+  color: black;
+  font-weight: bold;
+}
+
+.calendar-table thead th {
+  text-align: center;
+  font-size: 1rem;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Telegraf', sans-serif;
+}
+.navbar-brand {
+  font-family: 'Garet', sans-serif;
+  font-size: 2rem;
+  color: #FF01FB !important;
+}
+.section-title {
+  font-family: 'Garet', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.artist-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.artist-img {
+  flex: 1;
+  max-width: 400px;
+}
+.artist-img img {
+  width: 100%;
+  border-radius: 12px;
+}
+.artist-details {
+  flex: 2;
+}
+.artist-details h3 {
+  color: #FAFF00;
+  font-family: 'Garet', sans-serif;
+}
+.artist-details h4 {
+  color: #FF01FB;
+  margin-top: 1rem;
+}
+.artist-details p {
+  color: #ddd;
+  line-height: 1.6;
+}
+.media-links {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.media-links h4 {
+  color: #02A9EA;
+  font-family: 'Garet', sans-serif;
+  margin-bottom: 1rem;
+}
+.media-icons img {
+  width: 60px;
+  height: auto;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.upcoming-music {
+  margin: 3rem 0;
+}
+.upcoming-music h4 {
+  color: #FAFF00;
+  font-family: 'Garet', sans-serif;
+}
+.upcoming-music p {
+  color: #eee;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Telegraf', sans-serif;
+}
+.navbar-brand {
+  font-family: 'Garet', sans-serif;
+  font-size: 2rem;
+  color: #FF01FB !important;
+}
+.section-title {
+  font-family: 'Garet', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.form-section {
+  flex: 1;
+}
+.form-section label {
+  color: #FAFF00;
+}
+.form-section input,
+.form-section textarea {
+  background-color: #111;
+  color: white;
+  border: 1px solid #FAFF00;
+}
+.form-section button {
+  background-color: #FF01FB;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-section img {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 12px;
+}
+.social-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.social-section h4 {
+  color: #02A9EA;
+  margin-bottom: 1rem;
+}
+.social-icons img {
+  width: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.contact-details {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contact-details h4 {
+  color: #FAFF00;
+}
+.contact-details p {
+  margin: 0.2rem 0;
+}
